@@ -32,3 +32,17 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
+    - name: Send a message to Microsoft Teams
+      uses: aliencube/microsoft-teams-actions@v0.8.0
+      with:
+        webhook_uri: https://outlook.office.com/webhook/c06a05c5-66e6-4125-8abc-f41144d99bf0@38c3fde4-197b-47b9-9500-769f547df698/GitHubEnterprise/e46d35ece6204f34aa4648694f7f0771/8994f429-5279-4d29-abb4-1986eae65de6
+        title: <Message Title>
+        summary: <Message Summary>
+        text: <Message Text>
+        theme_color: <Message Theme Color>
+        sections: '[{ "activityTitle": "hello world" }, { ... }]'
+        actions: '[{ "@type": "OpenUri", "name": "lorem ipsum", "targets": [{ "os": "default", "uri": "https://localhost" }] }, { ... }]'
+
+
+
+
