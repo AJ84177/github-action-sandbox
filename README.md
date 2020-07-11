@@ -1,5 +1,6 @@
 # Learning
 
+![CI](https://github.com/AJ84177/angluar-todo-app/workflows/CI/badge.svg?branch=master)
 
 
 
